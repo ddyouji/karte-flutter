@@ -5,6 +5,7 @@ import 'package:karte_flutter/iam.dart';
 import 'package:karte_flutter/notification.dart';
 import 'package:karte_flutter/variables.dart';
 import 'package:karte_flutter/visual_tracking.dart';
+import 'package:karte_flutter/micro_cms.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -55,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
     "Variables",
     "Notification",
     "VT",
+    "Micro CMS",
   ];
   static List<Widget> _widgetOptions = <Widget>[
     CoreScreen(),
@@ -62,6 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
     VariablesScreen(),
     NotificationScreen(),
     VTScreen(),
+    MicroCMS(),
   ];
 
   void _onItemTapped(int index) {
@@ -98,6 +101,10 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.phonelink_sharp),
             label: 'VT',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.dataset_linked),
+            label: 'Micro CMS',
           ),
         ],
         currentIndex: _selectedIndex,

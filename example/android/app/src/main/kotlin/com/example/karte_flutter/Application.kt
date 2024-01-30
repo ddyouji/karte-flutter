@@ -10,6 +10,6 @@ class Application : FlutterApplication() {
         super.onCreate()
 
         KarteApp.setLogLevel(LogLevel.DEBUG)
-        KarteApp.setup(this)
+        KarteApp.setup(this,"xbt8CRHRpU6iDxrS1F3r6TjAr2I3Vc0s")
     }
 }
